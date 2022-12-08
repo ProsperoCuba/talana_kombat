@@ -1,0 +1,24 @@
+Preguntas generales 
+1. Supongamos que en un repositorio GIT hiciste un commit y olvidaste un archivo. Explica cómo se soluciona si hiciste push, y cómo si aún no hiciste. 
+De ser posible, que quede solo un commit con los cambios.
+
+R/: 
+- Agrego los cambios que quiero realizar.
+- Ejecuto git add .
+- Ejecuto git commit --amend (Se abre el editor de texto en la consola para poner un texto, en este caso no hace falta ya que tendra el del ultimo commit.)
+
+
+2. Si has trabajado con control de versiones ¿Cuáles han sido los flujos con los que has trabajado? 
+R/: Los flujos en los que he trabajado siempre hay una rama master que es donde se tiene los cambios a desplegar a producción, una rama develop que es donde se tiene el código a testear y subimos los cambios a la rama develop a traves de los pull request (PR), en algunos proyectos utilizaba git solo ejecutando y creando ramas manual en otros utilizaba git flow. Cada módulo nuevo era tratado como una rama feature, una vez que se subía el código y se testeaba ya daban la orden de mezclar con develop lo que haciamos en caso de git flow es cerrar la rama(cuando se cierra la rama lo mezcla directo con develop), en el caso de utilizar git solo se hace con el merge. tambien he trabajado en proyectos donde tienen una rama staging que es el despliegue para el entorno de desarrollo.
+
+
+3.¿Cuál ha sido la situación más compleja que has tenido con esto? 
+R/: Haber hecho commit y subir al repo un código que no tiene que ver con el requisito que se pedía(por que el cliente lo cambio).
+
+
+4. ¿Qué experiencia has tenido con los microservicios? 
+R/: No he tenido la oportunidad de utilizarlos pero si conosco que son como aplicaciones en la nube que se ejecutan de forma independiente y al ser independiente si alguno fala no afecta en otro servicio lo que brinda la capacidad de recuperación.
+
+
+5. ¿Cuál es tu servicio favorito de GCP o AWS? ¿Por qué? 
+R/: Hasta el momento solo he utilizado de google la de firebase para las notificaciones push.
